@@ -113,6 +113,7 @@ public class NoteActivity extends AppCompatActivity {
                 if (succeed) {
                     Toast.makeText(NoteActivity.this,
                             "Note added", Toast.LENGTH_SHORT).show();
+                    editText.setText("");
                     setResult(Activity.RESULT_OK);
                 } else {
                     Toast.makeText(NoteActivity.this,
